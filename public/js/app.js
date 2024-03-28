@@ -27,7 +27,7 @@ function showSchedule(day) {
 }
 // schedule table end
 // star rating start
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const ratingContainers = document.querySelectorAll('.row .rating');
 
     ratingContainers.forEach(container => {
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
 let mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() { scrollFunction() };
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -76,8 +76,8 @@ function topFunction() {
 var headerLinks = document.querySelectorAll('.header_link');
 
 // Parcurgeți fiecare link din meniu
-headerLinks.forEach(function(link) {
-    link.addEventListener('click', function(event) {
+headerLinks.forEach(function (link) {
+    link.addEventListener('click', function (event) {
         event.preventDefault();
 
         // Obțineți ID-ul secțiunii corespunzătoare
@@ -93,14 +93,15 @@ headerLinks.forEach(function(link) {
 
 
 //desenul
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var scrollUpButton = document.getElementById("myBtn");
 
-    scrollUpButton.addEventListener("click", function() {
-        window.location.href = "/";
+    scrollUpButton.addEventListener("click", function () {
+        let targetHeader = document.getElementById('header');
+        window.scrollTo({ top: targetHeader.offsetTop, behavior: 'smooth' });
     });
 
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", function () {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             scrollUpButton.style.display = "block";
         } else {

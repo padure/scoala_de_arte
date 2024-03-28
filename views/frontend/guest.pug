@@ -6,11 +6,11 @@ html
     link(rel="preconnect" href="https://fonts.googleapis.com")
     link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
     link(href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet")
-    script(src="js/app.js")
+    //- script(src="js/app.js")
   body
     button.btn__scroll-up#myBtn(title="Go to top", onclick="topFunction()")
       | Top
-    header.header
+    header.header#header
       include components/navbar.pug 
     block content
     footer.footer
