@@ -1,0 +1,248 @@
+section.schedule
+    .wrapper
+        h2.schedule_title#orar Orarul Studiilor
+        table.schedule_tab_day
+            tr.tab_day_list
+                th.tab_item(onclick="showSchedule('Luni')", data-day="Luni") Luni
+                th.tab_item(onclick="showSchedule('Marti')", data-day="Marti") Marti
+                th.tab_item(onclick="showSchedule('Miercuri')", data-day="Miercuri") Miercuri
+                th.tab_item(onclick="showSchedule('Joi')", data-day="Joi") Joi
+                th.tab_item(onclick="showSchedule('Vineri')", data-day="Vineri") Vineri
+                th.tab_item(onclick="showSchedule('Sambata')", data-day="Sambata") Sambata
+        .schedule__intro
+            h2.schedule__intro-text Alege ziua din tabelul de mai sus pentru a afla orarul.
+        //- Tabelul de orar
+        table.schedule_tab.hidden#schedule_Luni
+            thead
+                tr.tab_day_list
+                    th.tab_item_2.tab_item_2_head Nivel de complexitate
+                    th.tab_item_2.tab_item_2_head Ora
+                    th.tab_item_2.tab_item_2_head Curs
+                    th.tab_item_2.tab_item_2_head Cabinet
+            tbody
+                //- Orar pentru ziua de Luni
+                tr
+                    td.tab_item_2 Pentru cei mici
+                    td.tab_item_2 14:00 - 17:00
+                    td.tab_item_2 Desenul
+                    td.tab_item_2 Cabinetul 10
+                tr
+                    td.tab_item_2 Pentru incepători
+                    td.tab_item_2 16:00 - 19:00
+                    td.tab_item_2 Desenul
+                    td.tab_item_2 Cabinetul 10
+                tr
+                    td.tab_item_2 Pentru imbunatatirea abilitatilor
+                    td.tab_item_2 13:00 - 16:00
+                    td.tab_item_2 Desenul
+                    td.tab_item_2 Cabinetul 10
+                tr
+                    td.tab_item_2 Pentru profesioniști
+                    td.tab_item_2 10:00 - 13:00
+                    td.tab_item_2 Desenul
+                    td.tab_item_2 Cabinetul 10
+                tr
+                    td.tab_item_2 In timp liber
+                    td.tab_item_2 15:00 - 18:00
+                    td.tab_item_2 Desenul
+                    td.tab_item_2 Cabinetul 10
+                tr
+                    td.tab_item_2 Cei care au nevoie de Ajutor individual
+                    td.tab_item_2 11:00 - 14:00
+                    td.tab_item_2 Desenul
+                    td.tab_item_2 Cabinetul 10
+        //- tabel pentru ziua de marti
+        table.schedule_tab.hidden#schedule_Marti
+            thead
+                tr.tab_day_list
+                    th.tab_item_2.tab_item_2_head Nivel de complexitate
+                    th.tab_item_2.tab_item_2_head Ora
+                    th.tab_item_2.tab_item_2_head Curs
+                    th.tab_item_2.tab_item_2_head Cabinet
+            tbody
+                tr
+                    td.tab_item_2 Pentru cei mici
+                    td.tab_item_2 14:00 - 17:00
+                    td.tab_item_2 Pictura
+                    td.tab_item_2 Cabinetul 10
+                tr
+                    td.tab_item_2 Pentru incepători
+                    td.tab_item_2 16:00 - 19:00
+                    td.tab_item_2 Pictura
+                    td.tab_item_2 Cabinetul 10
+                tr
+                    td.tab_item_2 Pentru imbunatatirea abilitatilor
+                    td.tab_item_2 13:00 - 16:00
+                    td.tab_item_2 Pictura
+                    td.tab_item_2 Cabinetul 10
+                tr
+                    td.tab_item_2 Pentru profesioniști
+                    td.tab_item_2 10:00 - 13:00
+                    td.tab_item_2 Pictura
+                    td.tab_item_2 Cabinetul 10
+                tr
+                    td.tab_item_2 In timp liber
+                    td.tab_item_2 15:00 - 18:00
+                    td.tab_item_2 Pictura
+                    td.tab_item_2 Cabinetul 10
+                tr
+                    td.tab_item_2 Cei care au nevoie de Ajutor individual
+                    td.tab_item_2 11:00 - 14:00
+                    td.tab_item_2 Pictura
+                    td.tab_item_2 Cabinetul 10
+        //- tabel pentru ziua de miercuri
+        table.schedule_tab.hidden#schedule_Miercuri
+            thead
+                tr.tab_day_list
+                    th.tab_item_2.tab_item_2_head Nivel de complexitate
+                    th.tab_item_2.tab_item_2_head Ora
+                    th.tab_item_2.tab_item_2_head Curs
+                    th.tab_item_2.tab_item_2_head Cabinet
+            tbody
+                tr
+                    td.tab_item_2 Pentru cei mici
+                    td.tab_item_2 14:00 - 17:00
+                    td.tab_item_2 Sculptura
+                    td.tab_item_2 Cabinetul 5
+                tr
+                    td.tab_item_2 Pentru incepători
+                    td.tab_item_2 16:00 - 19:00
+                    td.tab_item_2 Sculptura
+                    td.tab_item_2 Cabinetul 5
+                tr
+                    td.tab_item_2 Pentru imbunatatirea abilitatilor
+                    td.tab_item_2 13:00 - 16:00
+                    td.tab_item_2 Sculptura
+                    td.tab_item_2 Cabinetul 5
+                tr
+                    td.tab_item_2 Pentru profesioniști
+                    td.tab_item_2 10:00 - 13:00
+                    td.tab_item_2 Sculptura
+                    td.tab_item_2 Cabinetul 5
+                tr
+                    td.tab_item_2 In timp liber
+                    td.tab_item_2 15:00 - 18:00
+                    td.tab_item_2 Sculptura
+                    td.tab_item_2 Cabinetul 10
+                tr
+                    td.tab_item_2 Cei care au nevoie de Ajutor individual
+                    td.tab_item_2 11:00 - 14:00
+                    td.tab_item_2 Sculptura
+                    td.tab_item_2 Cabinetul 5
+        //- tabel pentru ziua de Joi
+        table.schedule_tab.hidden#schedule_Joi
+            thead
+                tr.tab_day_list
+                    th.tab_item_2.tab_item_2_head Nivel de complexitate
+                    th.tab_item_2.tab_item_2_head Ora
+                    th.tab_item_2.tab_item_2_head Curs
+                    th.tab_item_2.tab_item_2_head Cabinet
+            tbody
+                tr
+                    td.tab_item_2 Pentru cei mici
+                    td.tab_item_2 14:00 - 17:00
+                    td.tab_item_2 Istoria artelor
+                    td.tab_item_2 Cabinetul 2
+                tr
+                    td.tab_item_2 Pentru incepători
+                    td.tab_item_2 16:00 - 19:00
+                    td.tab_item_2 Istoria artelor
+                    td.tab_item_2 Cabinetul 2
+                tr
+                    td.tab_item_2 Pentru imbunatatirea abilitatilor
+                    td.tab_item_2 13:00 - 16:00
+                    td.tab_item_2 Istoria artelor
+                    td.tab_item_2 Cabinetul 2
+                tr
+                    td.tab_item_2 Pentru profesioniști
+                    td.tab_item_2 10:00 - 13:00
+                    td.tab_item_2 Istoria artelor
+                    td.tab_item_2 Cabinetul 2
+                tr
+                    td.tab_item_2 In timp liber
+                    td.tab_item_2 15:00 - 18:00
+                    td.tab_item_2 Istoria artelor
+                    td.tab_item_2 Cabinetul 2
+                tr
+                    td.tab_item_2 Cei care au nevoie de Ajutor individual
+                    td.tab_item_2 11:00 - 14:00
+                    td.tab_item_2 Istoria artelor
+                    td.tab_item_2 Cabinetul 5
+        //- tabel pentru ziua de Vineri
+        table.schedule_tab.hidden#schedule_Vineri
+            thead
+                tr.tab_day_list
+                    th.tab_item_2.tab_item_2_head Nivel de complexitate
+                    th.tab_item_2.tab_item_2_head Ora
+                    th.tab_item_2.tab_item_2_head Curs
+                    th.tab_item_2.tab_item_2_head Cabinet
+            tbody
+                tr
+                    td.tab_item_2 Pentru cei mici
+                    td.tab_item_2 14:00 - 17:00
+                    td.tab_item_2 Compozitia de savalet
+                    td.tab_item_2 Cabinetul 20
+                tr
+                    td.tab_item_2 Pentru incepători
+                    td.tab_item_2 16:00 - 19:00
+                    td.tab_item_2 Compozitia de savalet
+                    td.tab_item_2 Cabinetul 20
+                tr
+                    td.tab_item_2 Pentru imbunatatirea abilitatilor
+                    td.tab_item_2 13:00 - 16:00
+                    td.tab_item_2 Compozitia de savalet
+                    td.tab_item_2 Cabinetul 20
+                tr
+                    td.tab_item_2 Pentru profesioniști
+                    td.tab_item_2 10:00 - 13:00
+                    td.tab_item_2 Compozitia de savalet
+                    td.tab_item_2 Cabinetul 20
+                tr
+                    td.tab_item_2 In timp liber
+                    td.tab_item_2 15:00 - 18:00
+                    td.tab_item_2 Compozitia de savalet
+                    td.tab_item_2 Cabinetul 20
+                tr
+                    td.tab_item_2 Cei care au nevoie de Ajutor individual
+                    td.tab_item_2 11:00 - 14:00
+                    td.tab_item_2 Compozitia de savalet
+                    td.tab_item_2 Cabinetul 20
+        //- tabel pentru ziua de Sambata
+        table.schedule_tab.hidden#schedule_Sambata
+            thead
+                tr.tab_day_list
+                    th.tab_item_2.tab_item_2_head Nivel de complexitate
+                    th.tab_item_2.tab_item_2_head Ora
+                    th.tab_item_2.tab_item_2_head Curs
+                    th.tab_item_2.tab_item_2_head Cabinet
+            tbody
+                tr
+                    td.tab_item_2 Pentru cei mici
+                    td.tab_item_2 14:00 - 17:00
+                    td.tab_item_2 Compozitia decorativa
+                    td.tab_item_2 Cabinetul 15
+                tr
+                    td.tab_item_2 Pentru incepători
+                    td.tab_item_2 16:00 - 19:00
+                    td.tab_item_2 Compozitia decorativa
+                    td.tab_item_2 Cabinetul 15
+                tr
+                    td.tab_item_2 Pentru imbunatatirea abilitatilor
+                    td.tab_item_2 13:00 - 16:00
+                    td.tab_item_2 Compozitia decorativa
+                    td.tab_item_2 Cabinetul 15
+                tr
+                    td.tab_item_2 Pentru profesioniști
+                    td.tab_item_2 10:00 - 13:00
+                    td.tab_item_2 Compozitia decorativa
+                    td.tab_item_2 Cabinetul 15
+                tr
+                    td.tab_item_2 In timp liber
+                    td.tab_item_2 15:00 - 18:00
+                    td.tab_item_2 Compozitia decorativa
+                    td.tab_item_2 Cabinetul 15
+                tr
+                    td.tab_item_2 Cei care au nevoie de Ajutor individual
+                    td.tab_item_2 11:00 - 14:00
+                    td.tab_item_2 Compozitia decorativa
+                    td.tab_item_2 Cabinetul 15
