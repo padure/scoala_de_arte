@@ -1,0 +1,19 @@
+extends ../guest
+
+block content
+    main.main
+    section.login
+        .wrapper
+            .login_wrapper
+                .login__header
+                    h3.login__title Creaza profil
+                form.form_login.m-3(action="/register", method="POST")
+                    label.label_login(for="first") Nume
+                    input(type="text", id="first", name="first", required, class="login_data label_login form-control")
+                    label.label_login(for="second") Adresa de email
+                    input(type="text", id="second", name="second", required, class="login_data label_login form-control")
+                    label.label_login.label_login-password(for="password") Parola
+                    input(type="password", id="password", name="password", required, class="login_data label_login form-control")
+                    .btnn
+                        button.btn.btn-primary(type="submit") Inregistreaza-te
+    script(src="js/register.js")
