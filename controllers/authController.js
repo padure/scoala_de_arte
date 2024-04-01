@@ -1,4 +1,11 @@
 const hash = require('pbkdf2-password')();
+const usersModel = require('../models/users');
+
+try {
+    // const users = await usersModel.getUsers();
+} catch (error) {
+    console.error(error);
+}
 
 const users = {
     tj: { name: 'tj' }
