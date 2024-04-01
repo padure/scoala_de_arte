@@ -26,7 +26,7 @@ Pentru a lansa aplicația, urmați pașii de mai jos:
      ```
 
 5. **Lansare site:**
-   - Pentru lansa site-ul, accesati in brouser:
+   - Pentru lansarea site-ul, accesati in browser:
      ```
      http://localhost:3000/
      ```
