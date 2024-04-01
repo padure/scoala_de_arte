@@ -24,3 +24,9 @@ Pentru a lansa aplicația, urmați pașii de mai jos:
      ```
      set DEBUG=myapp:* & npm start
      ```
+
+5. **Lansare site:**
+   - Pentru lansa site-ul, accesati in brouser:
+     ```
+     http://localhost:3000/
+     ```
