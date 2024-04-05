@@ -1,52 +1,87 @@
 const hash = require('pbkdf2-password')();
-const usersModel = require('../models/users');
+const userModel = require('../models/users');
 
-try {
-    // const users = await usersModel.getUsers();
-} catch (error) {
-    console.error(error);
-}
+// Funcția de autentificare
+// Funcția de autentificare
+const authenticate = (username, password, fn) => {
+    
+    if (!module.parent) console.log('Autentificare %s:%s', username, password);
 
-const users = {
-    tj: { name: 'tj' }
+    // Caută utilizatorul în baza de date
+    userModel.findByUsername(username, async function (err, user) {
+        if (err) return fn(err);
+        if (!user) return fn(null, null);
+
+        console.log('Utilizator găsit:', user);
+
+        try {
+            // Hash-ui parola introdusă de utilizator folosind salt-ul stocat în baza de date
+            const hashedPassword = await new Promise((resolve, reject) => {
+                hash({ password: password, salt: user.salt }, (err, pass, salt, hash) => {
+                    if (err) reject(err);
+                    resolve(hash);
+                });
+            });
+
+            console.log('Hash-ul generat:', hashedPassword);
+            console.log('Hash-ul din baza de date:', user.parola);
+
+            // Verifică dacă hash-ul parolei coincide cu cel din baza de date
+            if (hashedPassword === user.parola) {
+                return fn(null, user);
+            } else {
+                return fn(null, null);
+            }
+        } catch (error) {
+            return fn(error);
+        }
+    });
 };
 
-hash({ password: 'foobar' }, function (err, pass, salt, hash) {
-    if (err) throw err;
-    // store the salt & hash in the "db"
-    users.tj.salt = salt;
-    users.tj.hash = hash;
-});
 
-const authenticate = (name, pass, fn) => {
-    if (!module.parent) console.log('authenticating %s:%s', name, pass);
-    var user = users[name];
-    // query the db for the given username
-    if (!user) return fn(null, null)
-    // apply the same algorithm to the POSTed password, applying
-    // the hash against the pass / salt, if there is a match we
-    // found the user
-    hash({ password: pass, salt: user.salt }, function (err, pass, salt, hash) {
-        if (err) return fn(err);
-        if (hash === user.hash) return fn(null, user)
-        fn(null, null)
-    });
-}
-//Authenticate
+// Funcția de login
 exports.login = function (req, res, next) {
     authenticate(req.body.username, req.body.password, function (err, user) {
-        if (err) return next(err)
+        
+        if (err) return next(err);
         if (user) {
             req.session.regenerate(() => {
                 req.session.user = user;
-                res.status(200).json({ user: user });
+                res.redirect('/admin');
             });
         } else {
             res.status(404).redirect('/login');
         }
     });
-}
-//Logout
+};
+
+// Funcția de register
+// Funcția de register
+exports.register = async function (req, res, next) {
+    const { name, email, password } = req.body;
+
+    try {
+        // Verificăm dacă există deja un utilizator cu adresa de email dată
+        const existingUser = await userModel.findByEmail(email);
+        if (existingUser) {
+            return res.status(400).json({ message: 'Adresa de email este deja folosită.' });
+        }
+
+        // Creăm un nou utilizator în baza de date
+        const newUser = await userModel.create({ name, email, password });
+
+        // Redirectăm utilizatorul către pagina de login
+        return res.redirect('/login');
+    } catch (error) {
+        // Afișăm eroarea în consolă pentru a o diagnostica
+        console.error('Eroare în timpul înregistrării utilizatorului:', error);
+
+        // Returnăm un mesaj de eroare către client
+        return res.status(500).json({ message: 'A apărut o eroare în timpul înregistrării utilizatorului.' });
+    }
+};
+
+// Funcția de logout
 exports.logout = function (req, res) {
     req.session.destroy(function () {
         res.redirect('/');
