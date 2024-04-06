@@ -11844,5 +11844,91 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  font-family: sans-serif;
+  /* Choose a nice sans-serif font */
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: linear-gradient(to right, #f6b148, #bc1515);
+}
+
+.navbar {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #f6b148, #bc1515);
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+  /* Add hover transition */
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #f6b148;
+  /* Change color on hover */
+}
+
+.dropdown-menu {
+  background-color: #fff;
+  border-radius: 0.25rem;
+}
+
+.dropdown-item {
+  color: #333;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+  /* Add hover transition */
+}
+
+.dropdown-item:hover {
+  background-color: linear-gradient(to right, #f6b148, #bc1515);
+  /* Change background on hover */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.curs {
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  /* Add hover transform transition */
+}
+
+.curs:hover {
+  /* Slightly lift up on hover */
+  cursor: pointer;
+}
+
+.list-group-item {
+  border-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  /* Add hover transition */
+}
+
+.list-group-item:hover {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-1px);
+  background-color: #e9ecef;
+  /* Lighten background on hover */
+}
 
 /*# sourceMappingURL=admin.css.map */
