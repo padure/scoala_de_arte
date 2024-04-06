@@ -38,7 +38,6 @@ const authenticate = (username, password, fn) => {
     });
 };
 
-
 // Funcția de login
 exports.login = function (req, res, next) {
     authenticate(req.body.username, req.body.password, function (err, user) {

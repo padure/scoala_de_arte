@@ -1,19 +1,19 @@
-.header_wrapper
-    .header_logo
-        a(href='/', class='header_logo-link')
-            img(src='./img/log.svg', alt='logo', class='header_logo-pic')
-            span.logo_text ArtSCHOOL
-    .header_nav
-        ul.header_list
-            li.header_item
-                a(href='#despre__noi', class='header_link') Despre noi
-            li.header_item
-                a(href='#complexitatea-cursuri', class='header_link') Complexitatea cursurilor
-            li.header_item
-                a(href='#orar', class='header_link') Orar
-            li.header_item
-                a(href='#galerie', class='header_link') Galerie
-            li.header_item
-                a(href='tel:+37387679653', class='header_link') +373 876 796 53
-            li.header_item
-                a(href='/login', class='header_link header__sign_in') Logare
+header
+    .container
+        nav.navbar
+            a.nav-branding(href="/") ArtSchool
+            ul.nav-menu
+                li.nav-item
+                    a.nav-link(href="#despre-noi") Despre noi
+                li.nav-item
+                    a.nav-link(href="#cursuri") Cursuri
+                li.nav-item
+                    a.nav-link(href="#orar-tabel") Orar
+                li.nav-item
+                    a.nav-link(href="galerie.html") Galerie
+                li.nav-item
+                    a.nav-link(href="login.html") Logare
+            .hamburger
+                span.bar
+                span.bar
+                span.bar
