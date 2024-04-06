@@ -11,6 +11,7 @@ Pentru a lansa aplicația, urmați pașii de mai jos:
 2. **Creare Bază de Date:**
    - Configurați un sistem de gestionare a bazelor de date.
    - Creați o bază de date cu numele `arte`.
+   - Importati bază de date cu numele `arte.sql`.
    - Asigurați-vă că aveți un utilizator `root` cu acces la această bază de date.
 
 3. **Descărcare Dependințe:**
