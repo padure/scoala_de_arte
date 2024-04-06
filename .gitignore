@@ -1,6 +1,5 @@
 /node_modules
 /public/storage
 /resources
-.env
 /.idea
 /.vscode
