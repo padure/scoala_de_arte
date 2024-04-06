@@ -12,7 +12,7 @@ const restrict = (req, res, next) => {
 }
 
 /* GET login page. */
-router.get('/admin', restrict, adminController.index);
+router.get('/admin', restrict, adminController.courses);
 router.get('/admin/courses', restrict, adminController.courses);
 
 module.exports = router;

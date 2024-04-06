@@ -13,6 +13,7 @@ const indexRouter = require('./routes/index');
 const authRouter = require('./routes/auth');
 const usersRouter = require('./routes/users');
 const adminRouter = require('./routes/admin');
+const courseRouter = require('./routes/course');
 const port = process.env.PORT || 3000;
 
 const app = express();
@@ -49,6 +50,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/', authRouter);
 app.use('/', adminRouter);
+app.use('/', courseRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler

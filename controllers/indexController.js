@@ -10,6 +10,10 @@ exports.register = function(req, res, next) {
     res.render('frontend/auth/register', { title: 'Register' });
 };
 
+exports.formular = function(req, res, next) {
+    res.render('frontend/auth/formular', { title: 'formular' });
+};
+
 exports.galerie = function(req, res, next) {
     res.render('frontend/galerie', { title: 'Galerie' });
 };

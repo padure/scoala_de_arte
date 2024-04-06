@@ -1,13 +1,15 @@
-const coursesModel = require('../models/courses');
+const courseModel = require('../models/course');
 
 exports.index = function (req, res) {
-    res.render('admin/index', { title: 'Cursuri' });
+    const user = req.session.user;
+    res.render('admin/index', { title: 'Cursuri', user: user });
 };
 
 exports.courses = async function (req, res) {
     try {
-        const courses = await coursesModel.getCourses();
-        res.render('admin/curses/index', { title: 'Cursuri', courses });
+        const courses = await courseModel.getCourses();
+        const user = req.session.user;
+        res.render('admin/curses/index', { title: 'Cursuri', courses, user });
     } catch (error) {
         console.error(error);
         res.status(500).send('Error fetching courses');

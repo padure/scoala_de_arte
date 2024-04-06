@@ -5,11 +5,10 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary
             span.navbar-toggler-icon
         .collapse.navbar-collapse(id='navbarNavAltMarkup')
             .navbar-nav.me-auto
-                a.nav-link.active(aria-current='page', href='/admin') Home
-                a.nav-link(href='/admin/courses') Cursuri
+                a.nav-link.active(aria-current='page', href='/admin') Acasa
             ul.navbar-nav
                 li.nav-item.dropdown
-                    a.nav-link.dropdown-toggle(href="#", role="button", data-bs-toggle="dropdown", aria-expanded="false") Link
+                    a.nav-link.dropdown-toggle(href="#", role="button", data-bs-toggle="dropdown", aria-expanded="false") #{user.nume}
                     ul.dropdown-menu.dropdown-menu-end
                         li
                             a.dropdown-item(href="/logout") Logout

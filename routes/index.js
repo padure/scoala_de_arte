@@ -6,6 +6,7 @@ const indexController = require('../controllers/indexController');
 router.get('/', indexController.index);
 router.get('/login', indexController.login);
 router.get('/register', indexController.register);
+router.get('/formular', indexController.formular);
 router.get('/galerie', indexController.galerie);
 router.get('/cursuri', indexController.cursuri);
 router.get('/desenul', indexController.desenul);
