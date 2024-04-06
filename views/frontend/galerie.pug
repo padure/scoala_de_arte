@@ -1,0 +1,56 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/app.css')
+    link(rel='stylesheet', href='/css/auth.css')
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet")
+
+    script(src="js/app.js")
+  body
+    a.scroll-up(href="#" title="scroll to top")
+    section.gallery-section
+        h2.gallery-title Galeria noastră
+        ul.gallery-list
+            li.list.active(data-filter="all") All
+            li.list(data-filter="desen") Desen
+            li.list(data-filter="pictura") Pictura
+            li.list(data-filter="sculptura") Sculptura
+            li.list(data-filter="savalet") Compozitia de savalet
+            li.list(data-filter="decorativa") Compozitia decorativa
+        .product
+            .itemBox(data-item="desen")
+                img(src="./img/lucrare-9.jpg", alt="")
+            .itemBox(data-item="pictura")
+                img(src="./img/image-4.png", alt="")
+            .itemBox(data-item="sculptura")
+                img(src="./img/lucrare-6.jpeg", alt="")
+            .itemBox(data-item="decorativa")
+                img(src="./img/lucrare-13.jpg", alt="")
+            .itemBox(data-item="desen")
+                img(src="./img/lucrare-10.jpg", alt="")
+            .itemBox(data-item="pictura")
+                img(src="./img/lucrare-4jpg.jpg", alt="")
+            .itemBox(data-item="sculptura")
+                img(src="./img/lucrare-7.png", alt="")
+            .itemBox(data-item="savalet")
+                img(src="./img/lucrare-2.jpg", alt="")
+            .itemBox(data-item="decorativa")
+                img(src="./img/lucrare-14.jpg", alt="")
+            .itemBox(data-item="desen")
+                img(src="./img/lucrare-11.jpg", alt="")
+            .itemBox(data-item="pictura")
+                img(src="./img/lucrare-1.jpg", alt="")
+            .itemBox(data-item="sculptura")
+                img(src="./img/lucrare-19.jpg", alt="")
+            .itemBox(data-item="savalet")
+                img(src="./img/lucrare-3.jpg", alt="")
+            .itemBox(data-item="decorativa")
+                img(src="./img/lucrare-15.jpg", alt="")
+            .itemBox(data-item="desen")
+                img(src="./img/lucrare-16.jpg", alt="")
+            .itemBox(data-item="savalet")
+                img(src="./img/lucrare-17.jpg", alt="")
+            .itemBox(data-item="decorativa")
+                img(src="./img/b1.jpg", alt="")
+
+    script(src="js/galerie.js")

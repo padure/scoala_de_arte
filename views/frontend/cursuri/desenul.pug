@@ -1,0 +1,65 @@
+doctype html
+html
+    head
+        title= title
+        link(rel="stylesheet", href="./css/cursuri.css")
+
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap", rel="stylesheet")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css", integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==", crossorigin="anonymous", referrerpolicy="no-referrer")
+    body
+        a#scrollUpButton(href="/") Pagina principala
+
+        section.desen__section
+            .desen__wrapper
+                h1.desen__title Desenul
+                h2.desen__subtitle Profesor
+                .desen__prof
+                    img.desen__prof-img(src="./img/woman-prof.png", alt="desen profesor")
+                    h3.desen__prof-nume Alina Neagra
+                    p.desen__prof-desc
+                        | Profesoara Alexandra Vernisaj este o persoană care iubește arta și care își dedică timpul să îi învețe pe copii cum să deseneze. Ea este foarte bună la asta și mereu îi ajută pe copii să devină mai buni la desen. Scoala de arte plastice este un loc special
+                        | unde copiii învață despre artă și își pot arăta propriile lor creații. Elevii ei au câștigat multe premii pentru desenele lor frumoase, iar comunitatea o apreciază mult pentru munca ei. Alexandra Vernisaj este un exemplu minunat de
+                        | pasiune și devotament în educația artistică a copiilor.
+                    h3.desen__prof-reusite Reusite
+                    ul.desen__lista-reusite
+                        li.desen__reusite-item A implementat metode inovatoare de predare a desenului, adaptată pentru diferite grupe de vârstă și niveluri de aptitudini.
+                        li.desen__reusite-item Elevii săi au câștigat numeroase premii la competiții artistice locale și naționale, demonstrând nu doar talentul lor.
+                        li.desen__reusite-item Participarea activă la proiecte comunitare, cum ar fi decorarea spațiilor publice sau implicarea în campanii de sensibilizare prin artă.
+                        li.desen__reusite-item Recunoașterea și aprecierea sa în comunitatea locală pentru contribuția semnificativă adusă în educarea și încurajarea tinerelor talente artistice.
+                    p.desen__prof-moto
+                        | "Fiecare copil are o lume plină de culori și imaginație înăuntrul său, iar eu sunt acolo pentru a-i ajuta să descopere această minunăție."
+                h2.desen__subtitle Lista de materiale pentru curs
+                ul.desen__lista__materiale
+                    li.desen__item
+                        img.desen__item-img(src="./img/mapa-desen.png", alt="")
+                        p.desen__item-name Hârtie de desen - hârtie care poate gestiona o varietate de suporturi. Se recomandă hârtie de desen cu greutate mare într-un bloc. 11 x 14 sau mai mare este necesar pentru unele sarcini.
+                    li.desen__item
+                        img.desen__item-img(src="./img/rigla-lemn.jpg", alt="")
+                        p.desen__item-name Riglă
+                    li.desen__item
+                        img.desen__item-img(src="./img/radiera.jpg", alt="")
+                        p.desen__item-name Radieră albă - 1-2 radiere
+                    li.desen__item
+                        img.desen__item-img(src="./img/asutitoare.jpg", alt="")
+                        p.desen__item-name Ascuțitoare de creioane
+                    li.desen__item
+                        img.desen__item-img(src="./img/caiet.jpg", alt="")
+                        p.desen__item-name Jurnal/ Caiet de schițe
+                    li.desen__item
+                        img.desen__item-img(src="./img/creioane-simple.jpg", alt="")
+                        p.desen__item-name Set creioane de desen – minim 4-6 creioane care variază de la 6H la HB la 6B
+                    li.desen__item
+                        img.desen__item-img(src="./img/creioane-colorate.jpg", alt="")
+                        p.desen__item-name Set creioane colorate
+                    li.desen__item
+                        img.desen__item-img(src="./img/markere.jpg", alt="")
+                        p.desen__item-name Markere
+                    li.desen__item
+                        img.desen__item-img(src="./img/planse-desen.jpg", alt="")
+                        p.desen__item-name Planșe de desen
+                a.desen__btn(href="/formular")
+                    button.desen__inregistrare Inregistreaza-te
+        footer.footer
+            include ../components/footer.pug

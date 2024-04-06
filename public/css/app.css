@@ -623,14 +623,15 @@ li {
 }
 
 a {
-  color: white;
-  text-decoration: none;
+  color: white !important;
+  text-decoration: none !important;
 }
 
 .container {
   max-width: 1224px;
   width: 92%;
   margin: 0 auto;
+  padding: 0;
 }
 
 .navbar {
@@ -850,7 +851,6 @@ a {
 }
 
 .login_data {
-  width: 320px;
   height: 35px;
   border-radius: 9px;
 }

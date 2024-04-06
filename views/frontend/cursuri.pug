@@ -1,0 +1,101 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="./css/cursuri.css")
+
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap", rel="stylesheet")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css", integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==", crossorigin="anonymous", referrerpolicy="no-referrer")
+  body
+    section.cursuri
+        .wrapper
+            h1.cursuri__title Cursuri de desen online accesibile pentru toți
+            p.cursuri__desc Cursurile destinate celor mici sunt concepute pentru a&nbsp;stimula creativitatea și&nbsp;imaginația lor &icirc;n&nbsp;conformitate cu&nbsp;v&acirc;rsta lor. Acivitățile și&nbsp;exercițiile sunt adaptate și&nbsp;concepute a&nbsp;fi&nbsp;interactive și&nbsp;distractive.
+            .card__container
+                // card-1
+                .card
+                    img(src="./img/card-1.png", alt="img1")
+                    .card__content
+                        h1 Desenul
+                        p Exprimati creativitatea folosind creioane, markere sau culori.
+                        a.card__btn(href="/desenul") Afla mai multe
+                // card-2
+                .card
+                    img(src="./img/card-2.png", alt="img2")
+                    .card__content
+                        h1 Pictura
+                        p Creaza imagini folosind acuarela și&nbsp;pensule.
+                        a.card__btn(href="/pictura") Afla mai multe
+                // card-3
+                .card
+                    img(src="./img/card-3.png", alt="img3")
+                    .card__content
+                        h1 Sculptura
+                        p Arta de&nbsp;a&nbsp;modela și&nbsp;a&nbsp;da&nbsp;formă materialelor cu&nbsp;ajutorul lutului, plastilinei, lemnului, piatra
+                        a.card__btn(href="/sculptura") Afla mai multe
+                // card-4
+                .card
+                    img(src="./img/card-4.png", alt="img4")
+                    .card__content
+                        h1 Istoria artelor
+                        p Explorează dezvoltarea și&nbsp;evoluția formelor artistice de-a lungul timpurilor.
+                        a.card__btn(href="/istoria-artelor") Afla mai multe
+                // card-5
+                .card
+                    img(src="./img/card-5.png", alt="img4")
+                    .card__content
+                        h1 Compozitia de&nbsp;savalet
+                        p Realizeaza imagini pe&nbsp;o&nbsp;suprafață plană, cum ar&nbsp;fi&nbsp;o&nbsp;p&acirc;nză sau o&nbsp;h&acirc;rtie
+                        a.card__btn(href="/compozitia-de-savalet") Afla mai multe
+                // card-6
+                .card
+                    img(src="./img/card-6.png", alt="img4")
+                    .card__content
+                        h1 Compozitia decorativa
+                        p Aranjeaza si&nbsp;combina diverse elemente pentru a&nbsp;crea lucrări artistice.
+                        a.card__btn(href="/compozitia-decorativa") Afla mai multe
+            // cursuri orar start
+            h3.cursuri__orar-titlu Orarul studiilor:
+            table.cursuri__orar-tabel
+                thead.cursuri__tab-head
+                    tr
+                        th.cursuri__orar-item Ziua
+                        th.cursuri__orar-item Ora
+                        th.cursuri__orar-item Cursul
+                        th.cursuri__orar-item Cabinetul
+                tbody.cursuri__orar-col
+                    tr
+                        td.cursuri__orar-item Luni
+                        td.cursuri__orar-item 14:00&nbsp;&mdash; 17:00
+                        td.cursuri__orar-item Desen
+                        td.cursuri__orar-item Cabinetul&nbsp;15
+                    tr
+                        td.cursuri__orar-item Marți
+                        td.cursuri__orar-item 14:00&nbsp;&mdash; 17:00
+                        td.cursuri__orar-item Pictură
+                        td.cursuri__orar-item Cabinetul&nbsp;10
+                    tr
+                        td.cursuri__orar-item Miercuri
+                        td.cursuri__orar-item 14:00&nbsp;&mdash; 17:00
+                        td.cursuri__orar-item Sculptura
+                        td.cursuri__orar-item Cabinetul&nbsp;5
+                    tr
+                        td.cursuri__orar-item Joi
+                        td.cursuri__orar-item 14:00&nbsp;&mdash; 17:00
+                        td.cursuri__orar-item Istoria artelor
+                        td.cursuri__orar-item Cabinetul&nbsp;2
+                    tr
+                        td.cursuri__orar-item Vineri
+                        td.cursuri__orar-item 14:00&nbsp;&mdash; 17:00
+                        td.cursuri__orar-item Compozitia de&nbsp;savalet
+                        td.cursuri__orar-item Cabinetul&nbsp;20
+                    tr
+                        td.cursuri__orar-item Sambata
+                        td.cursuri__orar-item 14:00&nbsp;&mdash; 17:00
+                        td.cursuri__orar-item Compozitia decorativa
+                        td.cursuri__orar-item Cabinetul&nbsp;15
+            // cursuri orar end
+    footer.footer
+      include components/footer.pug

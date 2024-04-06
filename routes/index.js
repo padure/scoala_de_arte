@@ -6,5 +6,13 @@ const indexController = require('../controllers/indexController');
 router.get('/', indexController.index);
 router.get('/login', indexController.login);
 router.get('/register', indexController.register);
+router.get('/galerie', indexController.galerie);
+router.get('/cursuri', indexController.cursuri);
+router.get('/desenul', indexController.desenul);
+router.get('/pictura', indexController.pictura);
+router.get('/sculptura', indexController.sculptura);
+router.get('/istoria-artelor', indexController.istoraArtelor);    
+router.get('/compozitia-de-savalet', indexController.compozitiaDeSavalet);  
+router.get('/compozitia-decorativa', indexController.compozitiaDecorativa);  
 
 module.exports = router;
