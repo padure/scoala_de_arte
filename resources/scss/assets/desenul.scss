@@ -1,0 +1,311 @@
+.desen__section {
+    padding: 30px;
+    background-color: #f6b148;
+}
+
+.desen__wrapper {
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.desen__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.desen__subtitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.desen__prof-img {
+    margin-right: 20px;
+    width: 300px;
+    height: 350px;
+    float: left;
+}
+
+.desen__prof-nume {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.desen__prof-desc {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.desen__prof-reusite {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.desen__lista-reusite {
+    padding-left: 40px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.desen__reusite-item {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    list-style-type: square;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.desen__prof-moto {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.desen__lista__materiale {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.desen__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1.6px dashed black;
+}
+
+.desen__item:last-child {
+    margin-bottom: 0;
+}
+
+.desen__item-img {
+    width: 180px;
+    height: 175px;
+}
+
+.desen__item-name {
+    margin-left: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.desen__orar {
+    text-align: center;
+}
+
+.schedule_tab_day {
+    margin: 0 auto;
+    margin-bottom: 24px;
+    width: 100%;
+    height: 55px;
+}
+
+.tab_item {
+    border: 1px solid #A84A9F;
+    width: 192px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 16px;
+    text-align: center;
+}
+
+.tab_item:hover,
+.tab_item:focus,
+.tab_item:active {
+    color: white;
+    background-color: #A84A9F;
+}
+
+
+/* tabelul doi */
+
+.desen__orar {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.schedule__intro {
+    width: 100%;
+    height: 342px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.schedule__intro-text {
+    font-size: 23px;
+    font-weight: 400px;
+}
+
+.schedule_tab_day {
+    margin: 0 auto;
+    margin-bottom: 24px;
+    width: 100%;
+    height: 55px;
+}
+
+.tab_item {
+    border: 2px solid #A84A9F;
+    width: 192px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 16px;
+    text-align: center;
+}
+
+.tab_item:hover,
+.tab_item:focus,
+.tab_item:active {
+    color: white;
+    background-color: #A84A9F;
+}
+
+.selected_day {
+    background-color: violet;
+    color: white;
+}
+
+
+/* tabelul doi */
+
+.schedule_tab {
+    width: 100%;
+    height: 342px;
+}
+
+.tab_item_2 {
+    border: 1px solid #989191;
+    width: 192px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.tab_item_2_head {
+    background-color: #A84A9F;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* CSS pentru tabel */
+
+.schedule_tab {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+
+/* CSS pentru celulele din tabel */
+
+.schedule_tab th,
+.schedule_tab td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+/* CSS pentru tabele pe ecrane mici */
+
+@media screen and (max-width: 600px) {
+    .schedule_tab th,
+    .schedule_tab td {
+        padding: 8px;
+    }
+}
+
+
+/* CSS pentru ecrane mari */
+
+@media screen and (min-width: 1024px) {
+    .schedule_tab th,
+    .schedule_tab td {
+        padding: 12px;
+    }
+}
+
+
+/* Schedule section end */
+
+.desen__btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.desen__inregistrare {
+    width: 250px;
+    height: 50px;
+    color: white;
+    background-color: #f6b148;
+    border: 1px solid #f6b148;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.desen__inregistrare:hover {
+    color: white;
+    border: 1px solid #a16e20;
+    background-color: #a16e20;
+}
+
+#scrollUpButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#scrollUpButton:hover {
+    background-color: #0056b3;
+}

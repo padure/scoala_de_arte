@@ -23,7 +23,7 @@ Pentru a lansa aplicația, urmați pașii de mai jos:
 4. **Pornire Server:**
    - Pentru a porni serverul, executați următoarea comandă în terminal:
      ```
-     set DEBUG=myapp:* & npm start
+     npm start
      ```
 
 5. **Lansare site:**

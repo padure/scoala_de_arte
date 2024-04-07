@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+
+.main-user-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box:nth-child(2n) {
+    justify-content: end;
+}
+
+.user-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label {
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input {
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid grey;
+    padding: 0 10px;
+}
+
+.formular__denumire {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 3px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.formular__curs {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin: 10px 5px;
+}
+
+.form-submit-btn {
+    margin-top: 40px;
+}
+
+.form-submit-btn input {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+    background: rgba(227, 255, 13, 0.7);
+}
+
+.form-submit-btn input:hover {
+    background: rgba(239, 235, 11, 0.96);
+}
+
+input[type="reset"] {
+    display: block;
+    width: 30%;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(4, 4, 4);
+    background: rgba(46, 184, 97, 0.7);
+}
+
+input[type="reset"]:hover {
+    background-color: rgba(48, 235, 117, 0.7);
+}
+
+@media(max-width: 600px) {
+    .container {
+        min-width: 280px;
+    }
+    .user-input-box {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .user-input-box:nth-child(2n) {
+        justify-content: space-between;
+    }
+    .main-user-info {
+        max-height: 380px;
+        overflow: auto;
+    }
+    .main-user-info::-webkit-scrollbar {
+        width: 0;
+    }
+}
